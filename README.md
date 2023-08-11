@@ -2,7 +2,7 @@
 
 ## Introduction
 
-mempool is a simple memory pool (memory pool) implementation, which is used to improve memory utilization and performance. It provides a configurable-size cache pool for repeatedly allocating and recycling memory blocks of the same size.
+mempool is a simple memory pool implementation, which is used to improve memory utilization and performance. It provides a configurable-size cache pool for repeatedly allocating and recycling memory blocks of the same size.
 
 The memory pool pre-allocates a certain number of memory blocks and stores them in a stack, avoiding frequent memory allocation and deallocation operations. When memory needs to be allocated, a usable memory block is directly taken from the pool; when the memory block is no longer needed, it is returned to the pool for future use.
 
